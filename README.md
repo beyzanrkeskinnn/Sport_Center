@@ -1,8 +1,8 @@
 # Sport Center WebSite Project
 - In this project, a Sports Center Website has been created using HTML, CSS, and JavaScript technologies, responsive to a 576px screen size. This website includes various sections such as Home Page, Classes, BMI Calculator, Trainers, Purchase, Reviews, and Contact Us.
 
-Click here for the live version of the [project](https://sport-center-gamma.vercel.app/).
-![Screen Video](/public/img/screenshot.gif)
+  Click here for the live version of the [project](https://sport-center-gamma.vercel.app/).
+![Screen Video](/Sport_Center/public/img/screenshot.gif)
 
 - #### Header
    It includes a header, navigation menu, and logo. The navigation contains links to different sections of the website.
@@ -20,3 +20,11 @@ Click here for the live version of the [project](https://sport-center-gamma.verc
   Shows customer reviews along with their profiles and comments.
 - #### Contact 
   Includes contact information and a form for users to make appointments. Additionally, an embedded Google Map is provided.
+
+- #### Kurulum
+  Commands required for installation:
+   ```bash
+   git clone https://github.com/beyzanrkeskinnn/Sport_Center.git
+   cd Sport_Center
+   npm install
+   npm run dev
