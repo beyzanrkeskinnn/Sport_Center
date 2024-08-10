@@ -1,0 +1,76 @@
+:root {
+  /* font colors */
+  --font-color-1: white;
+  --font-color-2: #355592;
+  --font-color-3: black;
+  /* background colors */
+  --bg-color-1: white;
+  --bg-color-2: #ec9b00;
+  --bg-color-3: #355592;
+  --bg-color-4: #f2f8ff;
+  --bg-color-5: #f6f6f6;
+  --bg-color-6: rgb(0, 0, 0, 0.7);
+  /* border colors */
+  --border-color-1: white;
+  --border-color-2: black;
+  --border-color-3: #ec9b00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  scroll-behavior: smooth;
+}
+
+.center {
+  padding: 75px 250px;
+}
+
+
+
+.purchase-intro,
+.trainers-intro,
+.classes-intro,
+.review-intro,
+.contact-us-intro {
+  text-align: center;
+}
+
+.purchase-intro h2,
+.trainers-intro h2,
+.classes-intro h2,
+.review-intro h2,
+.contact-us-intro h2 {
+  color: var(--font-color-2);
+  font-size: 30px;
+  padding-top: 25px;
+}
+
+.purchase-intro p:first-of-type,
+.classes-intro p:first-of-type,
+.trainers-intro p:first-of-type,
+.review-intro p:first-of-type,
+.contact-us-intro p:first-of-type {
+  border-radius: 5px;
+  background-color: var(--bg-color-2);
+  display: inline-block;
+  height: 6px;
+  width: 60px;
+}
+
+.purchase-intro .explanation,
+.trainers-intro .explanation,
+.classes-intro .explanation,
+.review-intro .explanation,
+.contact-us-intro .explanation {
+  padding: 30px 250px;
+}
+
+.classes-section,
+.trainers-section {
+  padding-top: 76px;
+  padding-bottom: 45px;
+}

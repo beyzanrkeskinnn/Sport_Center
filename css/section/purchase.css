@@ -1,0 +1,61 @@
+/* Purchase */
+.purchase-card {
+  position: relative;
+  display: inline-flex;
+  width: 250px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.purchase-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.purchase-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.01);
+  transition: all 0.2s ease-in;
+}
+
+.purchase-card-info {
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+}
+
+.purchase-card-info h3 {
+  font-weight: 600;
+}
+
+.purchase-card-info img {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+.add-to-cart p {
+  margin-top: 15px;
+}
+
+.add-to-cart {
+  position: relative;
+  justify-content: start !important;
+  text-align: left;
+}
+
+.add-to-cart p {
+  text-align: center;
+  position: relative;
+}
+
+.add-to-cart-figure {
+  position: absolute;
+  left: 20px;
+}
+
+.purchase-section {
+  padding-top: 76px;
+  padding-bottom: 25px;
+}

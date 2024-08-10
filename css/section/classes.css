@@ -1,0 +1,72 @@
+/* Classes */
+.classes-section {
+  position: relative;
+  padding: 0 250px;
+}
+
+.classes-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bg-color-5);
+  clip-path: polygon(37% 0, 100% 0, 100% 100%, 45% 100%);
+  z-index: -1;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 70px;
+  text-align: center;
+}
+
+.features button {
+  background-color: var(--bg-color-3);
+  color: var(--font-color-1);
+  padding: 7px 20px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.features-btn-active {
+  background-color: var(--bg-color-2) !important;
+  box-shadow: 1px 1px 10px rgba(247, 154, 1, 3);
+  position: relative;
+}
+
+.features-btn-active::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  border-color: var(--border-color-3) transparent transparent transparent;
+}
+
+.classes-content {
+  display: flex;
+  padding: 30px 30px;
+  justify-content: space-between;
+}
+
+.classes-content-article {
+  padding-right: 200px;
+}
+
+.classes-content-figure {
+  display: flex;
+}
+
+.classes-content-figure img {
+  width: 390px;
+  height: 260px;
+  margin-top: 60px;
+}

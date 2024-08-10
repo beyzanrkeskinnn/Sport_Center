@@ -1,0 +1,9 @@
+@import "./common.css";
+@import "./section/home.css";
+@import "./section/contact.css";
+@import "./section/calculator.css";
+@import "./section/classes.css";
+@import "./section/purchase.css";
+@import "./section/review.css";
+@import "./section/trainers.css";
+@import "./footer.css";

@@ -1,0 +1,37 @@
+/* Footer */
+footer {
+  background-color: #355592;
+}
+
+.footer-logo img {
+  width: 20%;
+}
+
+.footer-text p {
+  color: white;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.footer-sub-section {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer-sub-section h2 {
+  font-weight: 500;
+}
+
+.footer-sub-section li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-sub-section li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 0.8rem;
+}

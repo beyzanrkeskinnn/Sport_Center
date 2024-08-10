@@ -1,0 +1,164 @@
+/* Header */
+#header {
+    background-image: url("../../public/img/hero-man.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .header-section {
+    color: var(--font-color-1);
+  }
+  
+  nav {
+    padding: 0px 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .checkbtn {
+    font-size: 30px;
+    color: var(--font-color-1);
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  .logo img {
+    height: 80%;
+    width: 80%;
+  }
+  
+  nav .link {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  nav .link li {
+    list-style: none;
+    display: inline-block;
+  }
+  nav .link a {
+    text-decoration: none;
+    color: var(--font-color-1);
+    margin-left: 2em;
+    transition: color 0.3s ease;
+  }
+  
+  .link a:not(.nav-btn):hover {
+    color: var(--border-color-3);
+  }
+  
+  .nav-btn {
+    background-color: var(--bg-color-2);
+    color: var(--font-color-1);
+    border-radius: 5px;
+    padding: 3px 15px;
+  }
+  
+  .nav-btn:hover {
+    color: var(--font-color-1) !important;
+    background-color: var(--bg-color-6);
+  }
+  
+  .brand {
+    background-color: var(--bg-color-3);
+    display: inline-block;
+    padding: 3px 13px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px black;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 4em;
+    display: block;
+    white-space: pre-line;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 2px black;
+  }
+  
+  /* Home */
+  .home-section {
+    padding-top: 120px;
+  }
+  
+  .home-section .explanation {
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+    padding: 5px 10px;
+  }
+  
+  .signUp-btn {
+    font-size: 1.1rem;
+    background-color: var(--bg-color-3);
+    color: var(--font-color-1);
+    padding: 5px 15px;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    transition: color 0.5s ease;
+    margin-bottom: 50px;
+    margin-right: 15px;
+  }
+  
+  .signUp-btn:hover {
+    background-color: var(--bg-color-4);
+    color: var(--font-color-2);
+  }
+  
+  .details-btn {
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    border-radius: 3px;
+    margin-left: 20px;
+    border-style: groove;
+    border-width: 1.5px;
+    border-color: var(--border-color-1);
+    cursor: pointer;
+    color: var(--font-color-1);
+    background-color: var(--bg-color-6);
+  }
+  
+   /* Boxes */
+  .home-boxes {
+    background-color: var(--bg-color-4);
+    padding: 0 250px;
+  }
+  
+  .boxes-info {
+    width: 200px;
+    height: 90px;
+    background-color: var(--bg-color-1);
+    display: inline-block;
+    margin: 20px 0px;
+    padding: 15px 30px;
+    text-align: center;
+  }
+  
+  .boxes-value {
+    color: var(--font-color-2);
+  }
+  
+  .boxes-card {
+    display: flex;
+    justify-content: space-between;
+  }
