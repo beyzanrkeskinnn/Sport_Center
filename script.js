@@ -3,10 +3,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.querySelector("nav").style.backgroundColor = "#355592";
   } else {
     document.querySelector("nav").style.backgroundColor = "transparent";
@@ -15,59 +12,59 @@ function scrollFunction() {
 
 // Değerlendirme Formu 11
 const featuresButtonsDOM = document.querySelectorAll("#features button");
-        const contentDOM = document.querySelector(".classes-content");
+const contentDOM = document.querySelector(".classes-content");
 
-        // Content data
-        const content = [
-            {
-                id: 1,
-                img: '/img/yoga.jpg',
-                category: "Yoga",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis beatae veritatis, asperiores eveniet est nesciunt sequi ipsum dolorum?",
-            },
-            {
-                id: 2,
-                img: '/img/group.webp',
-                category: "Group",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusantium perferendis voluptatum delectus culpa at reiciendis facere quidem.",
-            },
-            {
-                id: 3,
-                img: '/img/solo.jpg',
-                category: "Solo",
-                text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus corporis sit deserunt est totam culpa repellat cumque expedita.",
-            },
-            {
-                id: 4,
-                img: '/img/stret.webp',
-                category: "Stretching",
-                text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit temporibus soluta ratione sapiente sequi illo est doloribus molestiae?",
-            },
-        ];
+// Content data
+const content = [
+  {
+    id: 1,
+    img: "/img/yoga.jpg",
+    category: "Yoga",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis beatae veritatis, asperiores eveniet est nesciunt sequi ipsum dolorum?",
+  },
+  {
+    id: 2,
+    img: "/img/group.webp",
+    category: "Group",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde accusantium perferendis voluptatum delectus culpa at reiciendis facere quidem.",
+  },
+  {
+    id: 3,
+    img: "/img/solo.jpg",
+    category: "Solo",
+    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus corporis sit deserunt est totam culpa repellat cumque expedita.",
+  },
+  {
+    id: 4,
+    img: "/img/stret.webp",
+    category: "Stretching",
+    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit temporibus soluta ratione sapiente sequi illo est doloribus molestiae?",
+  },
+];
 
-        // Function to load default content on page load
-        document.addEventListener("DOMContentLoaded", function () {
-            const defaultButton = featuresButtonsDOM[0];
-            defaultButton.click();
-        });
+// Function to load default content on page load
+document.addEventListener("DOMContentLoaded", function () {
+  const defaultButton = featuresButtonsDOM[0];
+  defaultButton.click();
+});
 
-        // Event listeners for feature buttons
-        featuresButtonsDOM.forEach(function (item) {
-            item.addEventListener("click", function () {
-                item.classList.add("features-btn-active");
-                featuresButtonsDOM.forEach(function (otherItem) {
-                    if (item !== otherItem) {
-                        otherItem.classList.remove("features-btn-active");
-                    }
-                });
+// Event listeners for feature buttons
+featuresButtonsDOM.forEach(function (item) {
+  item.addEventListener("click", function () {
+    item.classList.add("features-btn-active");
+    featuresButtonsDOM.forEach(function (otherItem) {
+      if (item !== otherItem) {
+        otherItem.classList.remove("features-btn-active");
+      }
+    });
 
-                const selectedCategory = item.getAttribute("data-category");
-                const selectedContent = content.find(
-                    (item) => item.category === selectedCategory,
-                    (item)=>item.content === selectedCategory
-                );
+    const selectedCategory = item.getAttribute("data-category");
+    const selectedContent = content.find(
+      (item) => item.category === selectedCategory,
+      (item) => item.content === selectedCategory
+    );
 
-                contentDOM.innerHTML = `
+    contentDOM.innerHTML = `
                     <div class="classes-content-article">
                         <div>
                             <h2>Why are your ${selectedContent.category}?</h2><br>
@@ -88,9 +85,8 @@ const featuresButtonsDOM = document.querySelectorAll("#features button");
                         <img src="${selectedContent.img}" alt="${selectedContent.category}" /> 
                     </div>
                 `;
-            });
-        });
-
+  });
+});
 
 // Toggle navigation bar for mobile view
 var navBtnDOM = document.querySelector(".checkbtn");
@@ -108,7 +104,6 @@ allNavLinkDOM.forEach((tag) => {
     }, 400);
   });
 });
-
 
 //BMİ Calculator -  Değerlendime Formu 8
 const inputWeight = document.querySelector("#inputWeight");
